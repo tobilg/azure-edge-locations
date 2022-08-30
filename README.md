@@ -154,7 +154,6 @@ OSL,Oslo,Norway,NO,60.193901062012,11.100399971008,1
 WMI,Warsaw,Poland,PL,52.451099,20.6518,1
 LIS,Lisbon,Portugal,PT,38.7813,-9.13592,1
 OTP,Bucharest,Romania,RO,44.5711111,26.085,1
-ZIA,Moscow,Russian Federation,RU,55.553299,38.150002,1
 BCN,Barcelona,Spain,ES,41.2971,2.07846,1
 MAD,Madrid,Spain,ES,40.471926,-3.56264,1
 ARN,Stockholm,Sweden,SE,59.651901245117,17.918600082397,1
@@ -673,14 +672,6 @@ The JSON version of the data can be found at [dist/azure-edge-locations.json](di
     "countryCode": "RO",
     "latitude": 44.5711111,
     "longitude": 26.085,
-    "count": 1
-  },
-  "ZIA": {
-    "city": "Moscow",
-    "country": "Russian Federation",
-    "countryCode": "RU",
-    "latitude": 55.553299,
-    "longitude": 38.150002,
     "count": 1
   },
   "BCN": {

@@ -32,14 +32,14 @@ describe("# Testing the cloudflare-edge-locations functionality", function() {
     it("should return the correct count of locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getLocationCount().should.eql(100);
+      el.getLocationCount().should.eql(99);
       done();
     });
 
     it("should return the correct count of Edge Locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getPoPCount().should.eql(100);
+      el.getPoPCount().should.eql(99);
       done();
     });
   });

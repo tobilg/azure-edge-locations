@@ -89,7 +89,7 @@ const run = async () => {
   const data = await page.evaluate(() => {
     let cities = [];
 
-    const regions = document.querySelectorAll(`#main > div:nth-child(8) > table > tbody > tr > td:nth-child(2)`);
+    const regions = document.querySelectorAll(`#main > div.content > div:nth-child(8) > table > tbody > tr > td:nth-child(2)`);
 
     regions.forEach((region) => {
       // Names
