@@ -32,7 +32,7 @@ describe("# Testing the azure-edge-locations functionality", function() {
     it("should return the correct count of locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getLocationCount().should.eql(104);
+      el.getLocationCount().should.eql(102);
       done();
     });
 

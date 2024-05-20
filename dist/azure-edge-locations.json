@@ -24,7 +24,7 @@
     "count": 2
   },
   "QRO": {
-    "city": "Querétaro",
+    "city": "Queretaro",
     "country": "Mexico",
     "countryCode": "MX",
     "latitude": 20.6173,
@@ -71,20 +71,20 @@
     "longitude": -87.752403,
     "count": 4
   },
-  "DAL": {
-    "city": "Dallas",
+  "DFW": {
+    "city": "Dallas-Fort Worth",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 32.847099,
-    "longitude": -96.851799,
+    "latitude": 32.896801,
+    "longitude": -97.038002,
     "count": 4
   },
   "DSM": {
     "city": "Des Moines",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 41.534000396728516,
-    "longitude": -93.66310119628906,
+    "latitude": 41.534,
+    "longitude": -93.663101,
     "count": 3
   },
   "DTW": {
@@ -111,12 +111,12 @@
     "longitude": -157.924228,
     "count": 1
   },
-  "HOU": {
+  "IAH": {
     "city": "Houston",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 29.64539909,
-    "longitude": -95.27890015,
+    "latitude": 29.984399795532227,
+    "longitude": -95.34140014648438,
     "count": 3
   },
   "JAX": {
@@ -131,8 +131,8 @@
     "city": "Las Vegas",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 36.08010101,
-    "longitude": -115.1520004,
+    "latitude": 36.083361,
+    "longitude": -115.151817,
     "count": 3
   },
   "LAX": {
@@ -187,16 +187,16 @@
     "city": "Newark",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 40.692501068115234,
-    "longitude": -74.168701171875,
+    "latitude": 40.692501,
+    "longitude": -74.168701,
     "count": 1
   },
   "JFK": {
     "city": "New York",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 40.639801,
-    "longitude": -73.7789,
+    "latitude": 40.639447,
+    "longitude": -73.779317,
     "count": 2
   },
   "PHL": {
@@ -211,16 +211,16 @@
     "city": "Phoenix",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 33.43429946899414,
-    "longitude": -112.01200103759766,
+    "latitude": 33.435302,
+    "longitude": -112.005905,
     "count": 1
   },
   "1TS4": {
     "city": "Plano",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 33.06850051879883,
-    "longitude": -96.80139923095703,
+    "latitude": 33.068501,
+    "longitude": -96.801399,
     "count": 1
   },
   "PDX": {
@@ -235,8 +235,8 @@
     "city": "Quincy",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 39.9364013672,
-    "longitude": -91.3990020752,
+    "latitude": 39.936012,
+    "longitude": -91.398659,
     "count": 3
   },
   "SAT": {
@@ -251,24 +251,24 @@
     "city": "San Jose",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 37.362598,
-    "longitude": -121.929001,
+    "latitude": 37.362452,
+    "longitude": -121.929188,
     "count": 4
   },
   "SLC": {
     "city": "Salt Lake City",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 40.78839874267578,
-    "longitude": -111.97799682617188,
+    "latitude": 40.785749,
+    "longitude": -111.979746,
     "count": 3
   },
-  "BFI": {
+  "SEA": {
     "city": "Seattle",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 47.529998779296875,
-    "longitude": -122.302001953125,
+    "latitude": 47.449162,
+    "longitude": -122.311134,
     "count": 2
   },
   "41NJ": {
@@ -283,8 +283,8 @@
     "city": "Southfield",
     "country": "United States",
     "countryCode": "US",
-    "latitude": 42.48059844970703,
-    "longitude": -83.2477035522461,
+    "latitude": 42.480544,
+    "longitude": -83.247333,
     "count": 1
   },
   "3AZ7": {
@@ -295,28 +295,28 @@
     "longitude": -111.970194,
     "count": 1
   },
-  "EZE": {
+  "AEP": {
     "city": "Buenos Aires",
     "country": "Argentina",
     "countryCode": "AR",
-    "latitude": -34.8222,
-    "longitude": -58.5358,
+    "latitude": -34.5592,
+    "longitude": -58.4156,
     "count": 1
   },
   "VCP": {
     "city": "Campinas",
     "country": "Brazil",
     "countryCode": "BR",
-    "latitude": -23.0074005127,
-    "longitude": -47.1344985962,
+    "latitude": -23.007404,
+    "longitude": -47.134502,
     "count": 2
   },
   "GIG": {
     "city": "Rio de Janeiro",
     "country": "Brazil",
     "countryCode": "BR",
-    "latitude": -22.8099994659,
-    "longitude": -43.2505569458,
+    "latitude": -22.809999,
+    "longitude": -43.250557,
     "count": 3
   },
   "GRU": {
@@ -391,12 +391,12 @@
     "longitude": 2.55,
     "count": 1
   },
-  "SXF": {
+  "BER": {
     "city": "Berlin",
     "country": "Germany",
     "countryCode": "DE",
-    "latitude": 52.380001,
-    "longitude": 13.5225,
+    "latitude": 52.362247,
+    "longitude": 13.500672,
     "count": 1
   },
   "DUS": {
@@ -427,8 +427,8 @@
     "city": "Athens",
     "country": "Greece",
     "countryCode": "GR",
-    "latitude": 37.9364013672,
-    "longitude": 23.9444999695,
+    "latitude": 37.936401,
+    "longitude": 23.9445,
     "count": 1
   },
   "BUD": {
@@ -443,8 +443,8 @@
     "city": "Dublin",
     "country": "Ireland",
     "countryCode": "IE",
-    "latitude": 53.421299,
-    "longitude": -6.27007,
+    "latitude": 53.428713,
+    "longitude": -6.262121,
     "count": 2
   },
   "MXP": {
@@ -455,36 +455,36 @@
     "longitude": 8.72811,
     "count": 1
   },
-  "CIA": {
+  "FCO": {
     "city": "Rome",
     "country": "Italy",
     "countryCode": "IT",
-    "latitude": 41.7994,
-    "longitude": 12.5949,
+    "latitude": 41.804532,
+    "longitude": 12.251998,
     "count": 2
   },
   "OSL": {
     "city": "Oslo",
     "country": "Norway",
     "countryCode": "NO",
-    "latitude": 60.193901062012,
-    "longitude": 11.100399971008,
+    "latitude": 60.193901,
+    "longitude": 11.1004,
     "count": 1
   },
   "SVG": {
     "city": "Stavanger",
     "country": "Norway",
     "countryCode": "NO",
-    "latitude": 58.876701354,
-    "longitude": 5.6377801895,
+    "latitude": 58.876701,
+    "longitude": 5.63778,
     "count": 1
   },
-  "WMI": {
+  "WAW": {
     "city": "Warsaw",
     "country": "Poland",
     "countryCode": "PL",
-    "latitude": 52.451099,
-    "longitude": 20.6518,
+    "latitude": 52.1656990051,
+    "longitude": 20.967100143399996,
     "count": 1
   },
   "LIS": {
@@ -499,16 +499,16 @@
     "city": "Bucharest",
     "country": "Romania",
     "countryCode": "RO",
-    "latitude": 44.5711111,
+    "latitude": 44.571111,
     "longitude": 26.085,
     "count": 1
   },
-  "BCN": {
+  "BLA": {
     "city": "Barcelona",
-    "country": "Spain",
-    "countryCode": "ES",
-    "latitude": 41.2971,
-    "longitude": 2.07846,
+    "country": "Venezuela, Bolivarian Republic of",
+    "countryCode": "VE",
+    "latitude": 10.111111,
+    "longitude": -64.692222,
     "count": 1
   },
   "MAD": {
@@ -531,8 +531,8 @@
     "city": "Zurich",
     "country": "Switzerland",
     "countryCode": "CH",
-    "latitude": 47.464699,
-    "longitude": 8.54917,
+    "latitude": 47.458056,
+    "longitude": 8.548056,
     "count": 2
   },
   "LTN": {
@@ -547,16 +547,16 @@
     "city": "Manchester",
     "country": "United Kingdom",
     "countryCode": "GB",
-    "latitude": 53.35369873046875,
-    "longitude": -2.2749500274658203,
+    "latitude": 53.349375,
+    "longitude": -2.279521,
     "count": 1
   },
   "CAI": {
     "city": "Cairo",
     "country": "Egypt",
     "countryCode": "EG",
-    "latitude": 30.12190055847168,
-    "longitude": 31.40559959411621,
+    "latitude": 30.111534,
+    "longitude": 31.396694,
     "count": 2
   },
   "NBO": {
@@ -615,12 +615,12 @@
     "longitude": 51.608056,
     "count": 2
   },
-  "ISL": {
+  "IST": {
     "city": "Istanbul",
     "country": "Turkey",
     "countryCode": "TR",
-    "latitude": 40.976898,
-    "longitude": 28.8146,
+    "latitude": 41.261297,
+    "longitude": 28.741951,
     "count": 1
   },
   "DXB": {
@@ -635,8 +635,8 @@
     "city": "Chennai",
     "country": "India",
     "countryCode": "IN",
-    "latitude": 12.990005493164062,
-    "longitude": 80.16929626464844,
+    "latitude": 12.990005,
+    "longitude": 80.169296,
     "count": 4
   },
   "HYD": {
@@ -659,8 +659,8 @@
     "city": "New Delhi",
     "country": "India",
     "countryCode": "IN",
-    "latitude": 28.5665,
-    "longitude": 77.103104,
+    "latitude": 28.55563,
+    "longitude": 77.09519,
     "count": 1
   },
   "SZX": {
@@ -672,7 +672,7 @@
     "count": 1
   },
   "HKG": {
-    "city": "Hong Kong",
+    "city": "Islands",
     "country": "Hong Kong",
     "countryCode": "HK",
     "latitude": 22.308901,
@@ -699,8 +699,8 @@
     "city": "Osaka",
     "country": "Japan",
     "countryCode": "JP",
-    "latitude": 34.42729949951172,
-    "longitude": 135.24400329589844,
+    "latitude": 34.427299,
+    "longitude": 135.244003,
     "count": 2
   },
   "ITM": {
@@ -719,12 +719,12 @@
     "longitude": 126.45099639892578,
     "count": 1
   },
-  "KUL": {
+  "MY-0011": {
     "city": "Kuala Lumpur",
     "country": "Malaysia",
     "countryCode": "MY",
-    "latitude": 2.745579957962,
-    "longitude": 101.70999908447,
+    "latitude": 3.161877,
+    "longitude": 101.666788,
     "count": 1
   },
   "MNL": {
@@ -743,12 +743,12 @@
     "longitude": 103.994003,
     "count": 6
   },
-  "TPE": {
+  "TW-0009": {
     "city": "Taipei",
     "country": "Taiwan, Province of China",
     "countryCode": "TW",
-    "latitude": 25.0777,
-    "longitude": 121.233002,
+    "latitude": 25.043433,
+    "longitude": 121.556379,
     "count": 1
   },
   "TSA": {
@@ -771,8 +771,8 @@
     "city": "Ho Chi Minh City",
     "country": "Viet Nam",
     "countryCode": "VN",
-    "latitude": 10.8187999725,
-    "longitude": 106.652000427,
+    "latitude": 10.8188,
+    "longitude": 106.652,
     "count": 1
   },
   "BNE": {
@@ -783,29 +783,13 @@
     "longitude": 153.11700439453125,
     "count": 1
   },
-  "MEB": {
-    "city": "Derrimut",
-    "country": "Australia",
-    "countryCode": "AU",
-    "latitude": -37.72806,
-    "longitude": 144.90194,
-    "count": 1
-  },
-  "BWU": {
-    "city": "Macquarie Park",
-    "country": "Australia",
-    "countryCode": "AU",
-    "latitude": -33.925,
-    "longitude": 150.988333333,
-    "count": 1
-  },
   "MEL": {
     "city": "Melbourne",
     "country": "Australia",
     "countryCode": "AU",
     "latitude": -37.673302,
     "longitude": 144.843002,
-    "count": 1
+    "count": 2
   },
   "PER": {
     "city": "Perth",
@@ -821,14 +805,14 @@
     "countryCode": "AU",
     "latitude": -33.94609832763672,
     "longitude": 151.177001953125,
-    "count": 1
+    "count": 2
   },
   "AKL": {
     "city": "Auckland",
     "country": "New Zealand",
     "countryCode": "NZ",
-    "latitude": -37.008098602299995,
-    "longitude": 174.792007446,
+    "latitude": -37.01199,
+    "longitude": 174.786331,
     "count": 1
   }
 }

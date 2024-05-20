@@ -1,16 +1,14 @@
 {
   "name": "azure-edge-locations",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "List of Azure CDN edge locations",
   "main": "umd/azure-edge-locations.min.js",
   "module": "src/index.js",
   "scripts": {
     "test": "mocha",
-    "countries:download": "mkdir -p data && curl -L --silent https://datahub.io/core/country-list/r/data.json --output data/country-codes.json",
-    "airports:download": "mkdir -p data && curl -L --silent https://datahub.io/core/airport-codes/r/airport-codes.json --output data/airport-codes.json",
-    "airports:filter": "cat data/airport-codes.json  | jq -c '[ .[] | select( .type | contains(\"large_airport\")) ]' > data/large-airports.json",
+    "download": "mkdir -p data && duckdb < scripts/load-airports.sql",
     "generate": "node generate.js",
-    "build": "npm run airports:download && npm run airports:filter && npm run countries:download && npm run generate && npm run bundle",
+    "build": "npm run download && npm run generate && npm run bundle",
     "bundle": "node_modules/.bin/webpack-cli",
     "prepack": "npm run bundle"
   },

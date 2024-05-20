@@ -61,7 +61,8 @@ typings/
 .next
 
 # data
-data/
+data/airport-codes.json
+data/large-airports.json
 
 .DS_Store
 

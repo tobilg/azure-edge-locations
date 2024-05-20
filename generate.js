@@ -88,8 +88,8 @@ const run = async () => {
 
   const data = await page.evaluate(() => {
     let cities = [];
-    //#main > div.content > div:nth-child(10) > table > tbody > tr:nth-child(1) > td:nth-child(2)
-    const regions = document.querySelectorAll(`#main > div.content > div:nth-child(10) > table > tbody > tr > td:nth-child(2)`);
+    //#main > div.content > div:nth-child(11) > table > tbody > tr:nth-child(1) > td:nth-child(1)
+    const regions = document.querySelectorAll(`#main > div.content > div:nth-child(11) > table > tbody > tr > td:nth-child(2)`);
 
     regions.forEach((region) => {
       // Names
@@ -99,7 +99,7 @@ const run = async () => {
 
     // US Countries
     const usStates = {"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","AS":"American Samoa","DC":"District of Columbia","FM":"Federated States of Micronesia","GU":"Guam","MH":"Marshall Islands","MP":"Northern Mariana Islands","PW":"Palau","PR":"Puerto Rico","VI":"Virgin Islands"};
-    const cityReplacements = {"Singapore": "Singapore, Singapore", "Zürich": "Zurich", "Duesseldorf": "Düsseldorf", "Frankfurt": "Frankfurt am Main", "Bogotá": "Bogota", "Saint Petersburg": "St. Petersburg", "Chai Wan, Hong Kong SAR": "Chai Wan, Hong Kong", "Des Moines,IA, USA (3)": "Des Moines, IA, USA (3)", "Hong Kong (2)": "Hong Kong, Hong Kong (2)", "Osaka, Japan(2)": "Osaka, Japan (2)"}
+    const cityReplacements = {"Singapore": "Singapore, Singapore", "Zürich": "Zurich", "Duesseldorf": "Düsseldorf", "Frankfurt": "Frankfurt am Main", "Bogotá": "Bogota", "Saint Petersburg": "St. Petersburg", "Chai Wan, Hong Kong SAR": "Chai Wan, Hong Kong", "Des Moines,IA, USA (3)": "Des Moines, IA, USA (3)", "Hong Kong (2)": "Hong Kong, Hong Kong (2)", "Osaka, Japan(2)": "Osaka, Japan (2)", "Querétaro": "Queretaro", "Dallas": "Dallas-Fort Worth", "Hong Kong": "Islands"}
     
     const extractPopCount = (inputString) => {
       const found = inputString.split(" (");
@@ -152,7 +152,9 @@ const run = async () => {
     const location = {
       ...city
     };
-    const airport = location?.city?.length > 0 ? lookupAirport(utf8.encode(location.city)) : location.city;
+
+    const airport = location?.city?.length > 0 ? lookupAirport(location.city) : location.city;
+
     if (airportOverridesData.hasOwnProperty(location.city.toLowerCase())) {
       const overrideData = airportOverridesData[location.city.toLowerCase()];
       location.code = overrideData.code;
@@ -165,18 +167,18 @@ const run = async () => {
       location.countryCode = airport.iso_country;
       location.country = lookupCountry(airport.iso_country);
       const coordinate = airport.coordinates.split(', ');
-      location.latitude = parseFloat(coordinate[1]);
-      location.longitude = parseFloat(coordinate[0]);
+      location.latitude = parseFloat(coordinate[0]);
+      location.longitude = parseFloat(coordinate[1]);
     } else {
       // Run a second pass with all airports if not found before. Increases data quality
-      const smallAirport = lookupAirport(utf8.encode(location.city), allAirportData);
+      const smallAirport = lookupAirport(location.city, allAirportData);
       if (smallAirport) {
         location.code = smallAirport.iata_code || smallAirport.ident;
         location.countryCode = smallAirport.iso_country;
         location.country = lookupCountry(smallAirport.iso_country);
         const coordinate = smallAirport.coordinates.split(', ');
-        location.latitude = parseFloat(coordinate[1]);
-        location.longitude = parseFloat(coordinate[0]);
+        location.latitude = parseFloat(coordinate[0]);
+        location.longitude = parseFloat(coordinate[1]);
       }
     }
     return location;
