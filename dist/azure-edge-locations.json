@@ -463,6 +463,14 @@
     "longitude": 12.251998,
     "count": 2
   },
+  "AMS": {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "latitude": 52.308601,
+    "longitude": 4.76389,
+    "count": 1
+  },
   "OSL": {
     "city": "Oslo",
     "country": "Norway",
