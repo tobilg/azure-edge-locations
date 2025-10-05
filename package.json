@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "test": "mocha test/tests.ts --require ts-node/register",
+    "test": "mocha test/tests.ts",
     "install-duckdb": "./scripts/install-duckdb.sh",
     "download": "rm -rf temp/ && mkdir -p temp && duckdb < scripts/load-airports.sql",
     "generate": "mkdir -p data && tsx generate.ts",

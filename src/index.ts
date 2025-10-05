@@ -57,6 +57,14 @@ export default class AzureEdgeLocations {
     return Object.getOwnPropertyNames(azureEdgeLocations).length;
   }
 
+  getPoPCount () {
+    let count = 0;
+    Object.getOwnPropertyNames(azureEdgeLocations).forEach(location => {
+      count += azureEdgeLocations[location].count;
+    });
+    return count;
+  }
+
   getLocations (): EdgeLocations {
     return azureEdgeLocations;
   }

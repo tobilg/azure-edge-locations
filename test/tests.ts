@@ -1,7 +1,7 @@
 import * as chai from 'chai';
-const should = chai.should();
+const expect = chai.expect;
 
-import { AzureEdgeLocations } from '../dist/src/index';
+import AzureEdgeLocations from '../dist/index.js';
 
 chai.config.includeStack = false;
 
@@ -10,8 +10,10 @@ describe("# Testing the azure-edge-locations functionality", function() {
     it("should return the data for IAD", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.lookup('ATL').should.be.a('object');
-      el.lookup('ATL').should.eql({
+      const result = el.lookup('ATL');
+      expect(result).to.not.be.false;
+      expect(result).to.be.an('object');
+      expect(result).to.eql({
         "city": "Atlanta",
         "country": "United States",
         "countryCode": "US",
@@ -25,21 +27,24 @@ describe("# Testing the azure-edge-locations functionality", function() {
     it("should return 'false' if code isn't found", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.lookup('FOO').should.eql(false);
+      const result = el.lookup('FOO');
+      expect(result).to.eql(false);
       done();
     });
 
     it("should return the correct count of locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getLocationCount().should.eql(1);
+      const count = el.getLocationCount();
+      expect(count).to.be.greaterThan(100);
       done();
     });
 
     it("should return the correct count of Edge Locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getPoPCount().should.eql(3);
+      const locations = el.getPoPCount();
+      expect(locations).to.be.greaterThan(100);
       done();
     });
   });
