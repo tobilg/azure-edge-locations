@@ -1,6 +1,8 @@
+import { AirportOverrides } from '../src/index';
+
 // Airport data overrides
 // Data derived from Wikipedia
-module.exports = {
+const airportOverrides: AirportOverrides = {
   "queretaro": {
     "code": "QRO",
     "countryCode": "MX",
@@ -29,97 +31,97 @@ module.exports = {
     "code": "JIB",
     "countryCode": "DJ",
     "latitude": 11.546258,
-    "longitude": 43.159206,
+    "longitude": 43.159206
   },
   "reunion": {
     "code": "RUN",
     "countryCode": "FR",
     "latitude": 20.89,
-    "longitude": 55.516389,
+    "longitude": 55.516389
   },
   "kyiv": {
     "code": "IEV",
     "countryCode": "UA",
     "latitude": 50.401667,
-    "longitude": 30.451667,
+    "longitude": 30.451667
   },
   "chisinau": {
     "code": "KIV",
     "countryCode": "MD",
     "latitude": 46.927778,
-    "longitude": 28.930833,
+    "longitude": 28.930833
   },
   "dammam": {
     "code": "DMM",
     "countryCode": "SA",
     "latitude": 26.471194,
-    "longitude": 49.798583,
+    "longitude": 49.798583
   },
   "ramallah": {
     "code": "JRS",
     "countryCode": "IL",
     "latitude": 31.864722,
-    "longitude": 35.219167,
+    "longitude": 35.219167
   },
   "cagayan": {
     "code": "LLC",
     "countryCode": "PH",
     "latitude": 18.181111,
-    "longitude": 121.745,
+    "longitude": 121.745
   },
   "cebu": {
     "code": "CEB",
     "countryCode": "PH",
     "latitude": 10.307222,
-    "longitude": 123.978889,
+    "longitude": 123.978889
   },
   "jashore": {
     "code": "JSR",
     "countryCode": "BD",
     "latitude": 23.183611,
-    "longitude": 89.160833,
+    "longitude": 89.160833
   },
   "male": {
     "code": "MLE",
     "countryCode": "MV",
     "latitude": 4.191667,
-    "longitude": 73.528889,
+    "longitude": 73.528889
   },
   "ashburn": {
     "code": "IAD",
     "countryCode": "US",
     "latitude": 38.94449997,
-    "longitude": -77.45580292,
+    "longitude": -77.45580292
   },
   "mcallen": {
     "code": "MFE",
     "countryCode": "US",
     "latitude": 26.175833,
-    "longitude": -98.238611,
+    "longitude": -98.238611
   },
   "st. louis": {
     "code": "STL",
     "countryCode": "US",
     "latitude": 38.747222,
-    "longitude": -90.361389,
+    "longitude": -90.361389
   },
   "americana": {
     "code": "VCP",
     "countryCode": "BR",
     "latitude": -23.006944,
-    "longitude": -47.134444,
+    "longitude": -47.134444
   },
   "arica": {
     "code": "ARI",
     "countryCode": "PY",
     "latitude": -18.348611,
-    "longitude": -70.338889,
+    "longitude": -70.338889
   },
   "asuncion": {
     "code": "ASU",
     "countryCode": "CL",
     "latitude": -25.239722,
-    "longitude": -57.519167,
+    "longitude": -57.519167
   },
   "montreal": {
     "code": "YUL",
@@ -332,3 +334,5 @@ module.exports = {
     "longitude": 28.741951 
   }
 };
+
+export default airportOverrides;

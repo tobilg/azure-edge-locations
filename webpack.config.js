@@ -3,7 +3,7 @@ const path = require('path');
 // See: https://webpack.js.org/guides/author-libraries/
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './dist/src/index.js',
   mode: 'production',
   output: {
     globalObject: 'this',

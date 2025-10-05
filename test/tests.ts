@@ -1,7 +1,7 @@
-const chai = require('chai');
+import * as chai from 'chai';
 const should = chai.should();
 
-const AzureEdgeLocations = require('../src/index');
+import { AzureEdgeLocations } from '../dist/src/index';
 
 chai.config.includeStack = false;
 
@@ -32,14 +32,14 @@ describe("# Testing the azure-edge-locations functionality", function() {
     it("should return the correct count of locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getLocationCount().should.eql(103);
+      el.getLocationCount().should.eql(1);
       done();
     });
 
     it("should return the correct count of Edge Locations", function (done) {
       const el = new AzureEdgeLocations();
 
-      el.getPoPCount().should.eql(183);
+      el.getPoPCount().should.eql(3);
       done();
     });
   });

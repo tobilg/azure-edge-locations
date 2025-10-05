@@ -60,10 +60,16 @@ typings/
 # next.js build output
 .next
 
-# data
-data/airport-codes.json
-data/large-airports.json
+# Data files (downloaded/generated)
+data/*.json
 
+# OS files
 .DS_Store
 
+# TypeScript build info
+*.tsbuildinfo
+
 umd/
+temp/
+dist/
+src/data/

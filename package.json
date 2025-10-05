@@ -1,15 +1,25 @@
 {
   "name": "azure-edge-locations",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "List of Azure CDN edge locations",
-  "main": "umd/azure-edge-locations.min.js",
-  "module": "src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "test": "mocha",
-    "download": "mkdir -p data && duckdb < scripts/load-airports.sql",
-    "generate": "node generate.js",
+    "test": "mocha test/tests.ts --require ts-node/register",
+    "install-duckdb": "./scripts/install-duckdb.sh",
+    "download": "rm -rf temp/ && mkdir -p temp && duckdb < scripts/load-airports.sql",
+    "generate": "mkdir -p data && tsx generate.ts",
+    "bundle": "rm -rf dist/ src/data/ && mkdir -p src/data && cp data/azure-edge-locations.json src/data && tsc --build src/ && rm -f dist/tsconfig.tsbuildinfo dist/tsconfig.json",
     "build": "npm run download && npm run generate && npm run bundle",
-    "bundle": "node_modules/.bin/webpack-cli",
     "prepack": "npm run bundle"
   },
   "repository": {
@@ -17,7 +27,9 @@
     "url": "git+https://github.com/tobilg/azure-edge-locations.git"
   },
   "files": [
-    "umd/*.js"
+    "dist/*.js",
+    "dist/*.d.ts",
+    "dist/data/azure-edge-locations.json"
   ],
   "keywords": [
     "azure",
@@ -37,11 +49,13 @@
   },
   "homepage": "https://github.com/tobilg/azure-edge-locations#readme",
   "devDependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "puppeteer": "^19.6.3",
-    "utf8": "^3.0.0",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.7.0",
+    "chai": "^6.2.0",
+    "mocha": "^11.7.4",
+    "puppeteer": "^24.23.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }
