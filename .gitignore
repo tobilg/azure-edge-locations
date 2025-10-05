@@ -60,9 +60,6 @@ typings/
 # next.js build output
 .next
 
-# Data files (downloaded/generated)
-data/*.json
-
 # OS files
 .DS_Store
 
